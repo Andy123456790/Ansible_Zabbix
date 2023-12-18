@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  zabbix-appliance:
+    image: zabbix/zabbix-appliance:latest
+    container_name: zabbix-appliance
+    ports:
+      - "80:80"
+      - "443:443"
+      - "10051:10051"
